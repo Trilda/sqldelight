@@ -1,5 +1,5 @@
 [versions]
-kotlin = "1.8.20"
+kotlin = "1.8.21"
 dokka = "1.8.10"
 kotlinCoroutines = "1.6.4"
 idea = "222.4459.24" # Flamingo | 2022.2.1 (see https://plugins.jetbrains.com/docs/intellij/android-studio-releases-list.html)
@@ -49,7 +49,9 @@ moshiCodegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version = "
 
 intellij-core = { module = "com.jetbrains.intellij.platform:core", version.ref = "idea" }
 intellij-coreImpl = { module = "com.jetbrains.intellij.platform:core-impl", version.ref = "idea" }
-intellij-core-ui = { module = "com.jetbrains.intellij.platform:core-ui", version.ref = "idea" }
+intellij-coreUi = { module = "com.jetbrains.intellij.platform:core-ui", version.ref = "idea" }
+intellij-ide = { module = "com.jetbrains.intellij.platform:ide", version.ref = "idea" }
+intellij-ideCore = { module = "com.jetbrains.intellij.platform:ide-core", version.ref = "idea" }
 intellij-ideImpl = { module = "com.jetbrains.intellij.platform:ide-impl", version.ref = "idea" }
 intellij-testFramework = { module = "com.jetbrains.intellij.platform:test-framework", version.ref = "idea" }
 intellij-lang = { module = "com.jetbrains.intellij.platform:lang", version.ref = "idea" }
@@ -60,8 +62,8 @@ intellij-android = { module = "com.jetbrains.intellij.android:android-adt-ui-mod
 intellij-projectModel = { module = "com.jetbrains.intellij.platform:project-model", version.ref = "idea" }
 intellij-projectModelImpl = { module = "com.jetbrains.intellij.platform:project-model-impl", version.ref = "idea" }
 intellij-utilEx = { module = "com.jetbrains.intellij.platform:util-ex", version.ref = "idea" }
-
-jna = { module = "net.java.dev.jna:jna", version = "5.13.0" }
+intellij-utilUi = { module = "com.jetbrains.intellij.platform:util-ui", version.ref = "idea" }
+intellij-util = { module = "com.jetbrains.intellij.platform:util", version.ref = "idea" }
 
 sqlPsi = { module = "com.alecstrong.sql.psi:core", version.ref = "sqlPsi" }
 sqlPsiTestFixtures  = { module = "com.alecstrong.sql.psi:test-fixtures", version.ref = "sqlPsi" }
